@@ -6,7 +6,7 @@ end
 
 module TippyMun
 	class Builder
-		def initialize :total, :quantity
+		def initialize :total, :gratuity
 			@total = total
 			@gratuity = gratuity
 		end
@@ -29,7 +29,7 @@ module TippyMun
 		end
 
 		def calculation gratuity = @gratuity
-			@total += @total * (@quantity.to_f / 100)
+			@total += @total * (@gratuity.to_f / 100)
 		end
 	end
 end
