@@ -6,7 +6,7 @@ end
 
 module TippyMun
 	class Builder
-		def initialize :total, :gratuity
+		def initialize (total, gratuity)
 			@total = total
 			@gratuity = gratuity
 		end
