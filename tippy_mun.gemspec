@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["munircittagong@yahoo.com"]
 
   spec.summary       = %q{A gem for generating tip value based on a number of inputs}
-  spec.homepage      = "TODO: Put your gem's website or public repo URL here."
+	spec.homepage      = "https://github.com/Muncoder/tippy_mun"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0").reject do |f|
