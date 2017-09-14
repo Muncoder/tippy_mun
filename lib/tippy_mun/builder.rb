@@ -1,5 +1,5 @@
 class String
-	def integeri?
+def integer?
 		return true if self =~ /^[1-9]\d*(\.\d+)?$/
 	end
 end
@@ -13,7 +13,7 @@ module TippyMun
 		
 		def generate
 			return calculation if number_based?
-			string_based?
+			string_based
 		end
 
 		def number_based?
