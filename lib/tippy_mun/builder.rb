@@ -1,3 +1,9 @@
+class String
+	def integeri?
+		return true if self =~ /^[1-9]\d*(\.\d+)?$/
+	end
+end
+
 module TippyMun
 	class Builder
 		def initialize :total, :quantity
@@ -10,12 +16,12 @@ module TippyMun
 			string_based?
 		end
 
-		def string_based?
+		def number_based?
 			(@gratuity.is_a? Numeric) || (@gratuity.integer?)
 		end
 
 		def string_based
-			def @gratuity.downcase
+			case @gratuity.downcase
 				when 'high'			then calculation 25 
 				when 'standard'	then calculation 18 
 				when 'low'			then calculation 15 
