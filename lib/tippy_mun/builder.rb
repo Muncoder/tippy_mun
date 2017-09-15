@@ -5,7 +5,7 @@ class String
 							  end
 end
 
-module Tippy
+module TippyMun
 
 	  class Builder
 			    def initialize total:, gratuity:
