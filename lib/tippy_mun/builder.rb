@@ -1,6 +1,7 @@
 class String
-def integer?
+	def integer?
 		return true if self =~ /^[1-9]\d*(\.\d+)?$/
+		false
 	end
 end
 
@@ -29,7 +30,7 @@ module TippyMun
 		end
 
 		def calculation gratuity = @gratuity
-			@total += @total * (@gratuity.to_f / 100)
+			@total += @total * (gratuity.to_f / 100)
 		end
 	end
 end
