@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    tippy_mun (0.1.7)
+    tippy_mun (0.1.8)
 
 GEM
   remote: https://rubygems.org/
